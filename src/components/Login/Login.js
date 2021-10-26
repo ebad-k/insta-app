@@ -6,6 +6,8 @@ export const Login = ({ history }) => {
   return (
     <Card
       style={{
+        alignItems: "center", 
+        justifyContent: "center",
         backgroundColor: "#fafafa",
         border: "1px solid black",
         width: "400px",
