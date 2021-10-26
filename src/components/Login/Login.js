@@ -46,7 +46,7 @@ export const Login = ({ history }) => {
         type="primary"
         onPress={() =>
           Linking.openURL(
-            "https://api.instagram.com/oauth/authorize?client_id=402482767984493&redirect_uri=https://basic-display.herokuapp.com/home&scope=user_profile,user_media&response_type=code"
+            "https://api.instagram.com/oauth/authorize?client_id=402482767984493&redirect_uri=https://ekinsta.herokuapp.com/home&scope=user_profile,user_media&response_type=code"
           )
         }>
         Login with Instagram
