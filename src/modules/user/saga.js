@@ -7,7 +7,7 @@ const getAuthorizationCode = (code) =>
     url: "https://api.instagram.com/oauth/access_token",
     client_id: "402482767984493",
     client_secret: "e7b497895f75abfab74283b9f0015136",
-    redirect_uri: "https://ekinsta.herokuapp.com//home",
+    redirect_uri: "https://ekinsta.herokuapp.com/home",
     grant_type: "authorization_code",
     code: code,
   });
