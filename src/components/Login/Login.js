@@ -4,10 +4,13 @@ import Button from "@ant-design/react-native/lib/button";
 import Card from "@ant-design/react-native/lib/card";
 export const Login = ({ history }) => {
   return (
+    <View 
+    style={{  
+        alignItems: "center", 
+        justifyContent: "center"
+    }}>
     <Card
       style={{
-        alignItems: "center", 
-        justifyContent: "center",
         backgroundColor: "#fafafa",
         border: "1px solid black",
         width: "400px",
@@ -54,6 +57,7 @@ export const Login = ({ history }) => {
         Login with Instagram
       </Button>
     </Card>
+</View>
   );
 };
 
