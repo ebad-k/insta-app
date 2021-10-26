@@ -13,9 +13,8 @@ const App = () => {
     <>
       <Provider store={store}>
         <ConnectedRouter history={history}>
-          {/* <NativeRouter> */}
           <Router>
-            <View>
+            <View style={styles.container}>
               <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/home" component={HomePage} />
@@ -31,12 +30,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "ffffff",
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#000000",
   },
 });
 export default App;
