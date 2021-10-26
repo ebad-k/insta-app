@@ -15,7 +15,7 @@ const App = () => {
         <ConnectedRouter history={history}>
           {/* <NativeRouter> */}
           <Router>
-            <View style={styles.container}>
+            <View>
               <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/home" component={HomePage} />
