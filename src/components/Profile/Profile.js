@@ -178,11 +178,11 @@ export const Profile = () => {
             <Text
               style={{ fontSize: 30, fontWeight: 900, fontFamily: "verdana" }}
             >
-              Welcome to your Instagram account
+              Welcome to your instagram account
             </Text>
             <View style={{ flexDirection: "column", color: "black" }}>
-              <Text style={styles.userText}>Username : {userID?.username}</Text>
-              <Text style={styles.userText}>User ID : {userID?.id}</Text>
+              <Text style={styles.userText}>username : {userID?.username}</Text>
+              <Text style={styles.userText}>user id : {userID?.id}</Text>
             </View>
           </View>
         </View>
