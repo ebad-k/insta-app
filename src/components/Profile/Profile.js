@@ -17,7 +17,7 @@ import {
   getPosts,
 } from "../../modules/user/action";
 
-const access_token_local = localStorage.getItem("access_token");
+// const access_token_local = localStorage.getItem("access_token");
 
 export const Profile = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ export const Profile = () => {
   const loading = useSelector((state) => state.getAccessTokenReducer.loading);
   const data = useSelector((state) => state.getAccessTokenReducer.userMediaIds);
   const posts = useSelector((state) => state.getAccessTokenReducer.posts);
-  const [access_token, setAccessToken] = useState(access_token_local);
+  const [access_token, setAccessToken] = useState(localStorage.getItem("access_token"));
   const [dataList, setDataList] = useState([]);
   const [userID, setUserID] = useState(user);
   const [modalVisible, setModalVisible] = useState(false);
@@ -36,8 +36,8 @@ export const Profile = () => {
   const [timestamp, setTimeStamp] = useState("");
   const numColumns = 3;
   useEffect(() => {
-    setAccessToken(access_token)
-  }, [access_token_local]);
+    setAccessToken(localStorage.getItem("access_token"))
+  });
   useEffect(() => {
     dispatch(getUserProfile(access_token));
     dispatch(getUserMediaIds(access_token));
