@@ -176,7 +176,7 @@ export const Profile = () => {
             }}
           >
             <Text
-              style={{ fontSize: 30, fontWeight: 900, fontFamily: "verdana" }}
+              style={{ fontSize: 30, fontWeight: 900 }}
             >
               Welcome to your instagram account
             </Text>
@@ -219,7 +219,6 @@ const styles = StyleSheet.create({
   },
   userText: {
     fontSize: 25,
-    fontFamily: "verdana",
     fontWeight: 500,
     paddingHorizontal: 10,
   },
